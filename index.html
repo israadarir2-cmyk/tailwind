@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Bloom</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-rose-50 text-slate-800">
+
+  <!-- Navbar -->
+  <nav class="border-b border-pink-100 bg-white/80 backdrop-blur">
+    <div class="mx-auto flex max-w-6xl items-center justify-between px-6 py-5">
+
+      <!-- Logo -->
+      <a
+        href="#"
+        class="text-2xl font-bold tracking-tight text-pink-600"
+      >
+        Bloom<span class="text-violet-500">.</span>
+      </a>
+
+      <!-- Links -->
+      <div class="hidden items-center gap-8 md:flex">
+
+        <a
+          href="#"
+          class="text-sm font-medium text-pink-600 transition hover:text-pink-400"
+        >
+          Home
+        </a>
+
+        <a
+          href="#about"
+          class="text-sm font-medium text-slate-500 transition hover:text-pink-500"
+        >
+          About
+        </a>
+
+      </div>
+
+      <!-- Button -->
+      <a
+        href="#about"
+        class="rounded-full bg-pink-500 px-5 py-2.5 text-sm font-medium text-white shadow-lg shadow-pink-200 transition hover:-translate-y-0.5 hover:bg-pink-600"
+      >
+        Get Started
+      </a>
+
+    </div>
+  </nav>
+
+
+  <!-- Hero -->
+  <main>
+
+    <section class="relative overflow-hidden">
+
+      <!-- Background Decoration -->
+      <div
+        class="absolute -left-20 top-10 -z-10 h-72 w-72 rounded-full bg-pink-200/50 blur-3xl"
+      ></div>
+
+      <div
+        class="absolute -right-20 top-32 -z-10 h-80 w-80 rounded-full bg-violet-200/50 blur-3xl"
+      ></div>
+
+
+      <div
+        class="mx-auto max-w-6xl px-6 py-28 text-center md:py-36"
+      >
+
+        <!-- Badge -->
+        <span
+          class="mb-6 inline-block rounded-full border border-pink-200 bg-pink-100 px-4 py-2 text-sm font-medium text-pink-600"
+        >
+          ✨ Learn Tailwind CSS
+        </span>
+
+
+        <!-- Heading -->
+        <h1
+          class="mx-auto max-w-3xl text-5xl font-bold leading-tight tracking-tight text-slate-800 md:text-7xl"
+        >
+          Create something
+          <span
+            class="bg-gradient-to-r from-pink-500 to-violet-500 bg-clip-text text-transparent"
+          >
+            beautiful.
+          </span>
+        </h1>
+
+
+        <!-- Description -->
+        <p
+          class="mx-auto mt-6 max-w-2xl text-lg leading-8 text-slate-500"
+        >
+          A simple project designed to help you understand
+          Tailwind CSS by creating a beautiful and modern interface.
+        </p>
+
+
+        <!-- Buttons -->
+        <div
+          class="mt-10 flex flex-col justify-center gap-4 sm:flex-row"
+        >
+
+          <a
+            href="#about"
+            class="rounded-xl bg-pink-500 px-7 py-3.5 font-medium text-white shadow-lg shadow-pink-200 transition hover:-translate-y-1 hover:bg-pink-600"
+          >
+            Explore Project
+          </a>
+
+          <a
+            href="#about"
+            class="rounded-xl border border-pink-200 bg-white px-7 py-3.5 font-medium text-pink-600 shadow-sm transition hover:-translate-y-1 hover:bg-pink-50"
+          >
+            Learn More
+          </a>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- About -->
+    <section
+      id="about"
+      class="border-t border-pink-100 bg-white"
+    >
+
+      <div
+        class="mx-auto max-w-6xl px-6 py-24"
+      >
+
+        <!-- Section Heading -->
+        <div class="mb-14 max-w-2xl">
+
+          <p
+            class="mb-3 text-sm font-semibold uppercase tracking-widest text-pink-500"
+          >
+            About
+          </p>
+
+          <h2
+            class="text-3xl font-bold text-slate-800 md:text-4xl"
+          >
+            Learn by building.
+          </h2>
+
+          <p
+            class="mt-4 leading-7 text-slate-500"
+          >
+            Instead of memorizing CSS properties, learn how
+            Tailwind converts them into simple utility classes.
+          </p>
+
+        </div>
+
+
+        <!-- Cards -->
+        <div
+          class="grid gap-6 md:grid-cols-3"
+        >
+
+          <!-- Card 1 -->
+          <div
+            class="rounded-2xl border border-pink-100 bg-rose-50 p-7 shadow-sm transition hover:-translate-y-2 hover:shadow-xl hover:shadow-pink-100"
+          >
+
+            <div
+              class="mb-6 flex h-12 w-12 items-center justify-center rounded-xl bg-pink-100 text-xl text-pink-500"
+            >
+              ✦
+            </div>
+
+            <h3
+              class="mb-3 text-xl font-semibold text-slate-800"
+            >
+              Utility First
+            </h3>
+
+            <p
+              class="leading-7 text-slate-500"
+            >
+              Learn how classes like flex, p-6 and text-xl
+              replace traditional CSS.
+            </p>
+
+          </div>
+
+
+          <!-- Card 2 -->
+          <div
+            class="rounded-2xl border border-violet-100 bg-violet-50 p-7 shadow-sm transition hover:-translate-y-2 hover:shadow-xl hover:shadow-violet-100"
+          >
+
+            <div
+              class="mb-6 flex h-12 w-12 items-center justify-center rounded-xl bg-violet-100 text-xl text-violet-500"
+            >
+              ♡
+            </div>
+
+            <h3
+              class="mb-3 text-xl font-semibold text-slate-800"
+            >
+              Responsive
+            </h3>
+
+            <p
+              class="leading-7 text-slate-500"
+            >
+              Understand responsive prefixes such as sm:, md:
+              and lg: while building the layout.
+            </p>
+          </div>
+          <!-- Card 3 -->
+          <div
+            class="rounded-2xl border border-fuchsia-100 bg-fuchsia-50 p-7 shadow-sm transition hover:-translate-y-2 hover:shadow-xl hover:shadow-fuchsia-100"
+          >
+            <div
+              class="mb-6 flex h-12 w-12 items-center justify-center rounded-xl bg-fuchsia-100 text-xl text-fuchsia-500"
+            >
+              ✿
+            </div>
+            <h3
+              class="mb-3 text-xl font-semibold text-slate-800"
+            >
+              Modern UI
+            </h3>
+            <p
+              class="leading-7 text-slate-500"
+            >
+              Practice real-world classes for spacing, colors,
+              borders, shadows and animations.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer
+    class="border-t border-pink-100 bg-rose-50 px-6 py-8 text-center"
+  >
+    <p class="text-sm text-slate-400">
+
+      Made with
+      <span class="font-medium text-pink-500">
+        Tailwind CSS
+      </span>
+      ♡
+
+    </p>
+  </footer>
+
+</body>
+</html>
